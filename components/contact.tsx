@@ -1,16 +1,11 @@
 "use client"
 
 import { useInView } from "@/hooks/use-in-view"
-import { MapPin, Phone, Mail, Clock } from "lucide-react"
+import { Phone, Mail, Clock, MapPin } from "lucide-react"
 
 const BOOKING_URL = "https://www.bokadirekt.se/places/salong-englakarin-45590"
 
 const contactInfo = [
-  {
-    icon: MapPin,
-    title: "Besök Oss",
-    details: ["Långgatan 19", "821 43 Bollnäs"],
-  },
   {
     icon: Phone,
     title: "Ring Oss",
@@ -62,6 +57,21 @@ export default function Contact() {
           {contactInfo.map((item, index) => (
             <ContactCard key={item.title} item={item} index={index} />
           ))}
+          
+          {/* Hitta.se Map Card */}
+          <a
+            href="https://www.hitta.se/kartan!~61.34889,16.39606,14z/tr!i=UtKStYKf/search!i=cggtxfc!q=L%C3%A5nggatan%2019%20821%2043%20Bolln%C3%A4s!t=single!st=cmp/geocode!l=61.35627:16.36664?search=L%C3%A5nggatan%2019%20821%2043%20Bolln%C3%A4s&st=single&sst=cmp&sids=cggtxfc&srb=0"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group p-6 bg-card border border-border rounded-2xl text-center transition-all duration-500 hover:border-accent/50 hover:shadow-lg cursor-pointer"
+          >
+            <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition-all duration-300 group-hover:bg-accent group-hover:text-accent-foreground group-hover:scale-110">
+              <MapPin className="h-6 w-6" />
+            </div>
+            <h3 className="text-lg font-semibold mb-2">Besök Oss</h3>
+            <p className="text-sm text-muted-foreground">Långgatan 19</p>
+            <p className="text-sm text-muted-foreground">821 43 Bollnäs</p>
+          </a>
         </div>
 
         <div
