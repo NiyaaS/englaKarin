@@ -71,7 +71,7 @@ export default function Gallery() {
 }
 
 function GalleryItem({ image, index }: { image: (typeof galleryImages)[0]; index: number }) {
-  const { ref, isInView } = useInView({ threshold: 0.1 })
+  const { ref, isInView } = useInView<HTMLAnchorElement>({ threshold: 0.1 })
 
   return (
     <a
