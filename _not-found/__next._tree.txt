@@ -1,0 +1,2 @@
+:HL["/englaKarin/_next/static/chunks/11f388a8b548fa2b.css","style"]
+0:{"buildId":"uucb9j8lc8rjgthzX98V8","tree":{"name":"","paramType":null,"paramKey":"","hasRuntimePrefetch":false,"slots":{"children":{"name":"/_not-found","paramType":null,"paramKey":"/_not-found","hasRuntimePrefetch":false,"slots":{"children":{"name":"__PAGE__","paramType":null,"paramKey":"__PAGE__","hasRuntimePrefetch":false,"slots":null,"isRootLayout":false}},"isRootLayout":false}},"isRootLayout":true},"staleTime":300}
